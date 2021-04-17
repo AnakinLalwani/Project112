@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h3 class="btn heading">Case Study
+      </h3>
+      <br><br>
+
+      <p style="font-size: 22px;">
+        <b style="color: rgb(19, 19, 105)">Teachable Machine(My one)</b>
+        <br>
+        <b style="color: darkcyan">VS</b>
+        <br>
+        <b style="color: rgb(19, 19, 105)">Mobilenet (Pre-made one)</b>
+        <br>
+      </p>
+      <hr style="border-color: rgb(19, 19, 105)">
+      <h4 style="color: rgb(19, 19, 105)">Aim: To find the differences between my AI and Mobilenet</h4>
+      <hr style="border-color: rgb(19, 19, 105)">
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div id="camera" class="col-md-4 col-sm-12 col-xs-12">
+          <img id="tm" src="teachable machine.jpg" onclick="tm()">
+        </div>
+        <h3 class="col-md-4 col-sm-12 col-xs-12 obsconclusion">Observation:<br>1) In the one which was made by me in teachable machine has more of a chance at failing as there was only a limited number of pictures put in and most objects are different<br> 2)Mobilenet works most of the time as it has been trained with multiple images but sometimes goes wrong(Click the image to see both)</h3>
+        <br><br>
+      </div>
+      <div id="conclusion" class="col-md-12 col-sm-12 col-xs-12">
+        <h3 class="col-md-4 col-sm-12 col-xs-12 obsconclusion">Conclusion:<br>1) Teachable Machine is more likely to identify objects that have been trained into it<br> 2) Mobilenet can identify most images as it has been trained with images from the internet but is most likely to fail if the object is very colorful and different from all the other objects in its category</h3>
+        <div id="result">
+          <img id="mobilenet" src="logo.gif" onclick="mn()">
+        </div>
+        
+        <br><br>
+        <button class="btn btn-primary" id="tests" onclick="testpage()">My Testing</button>
+        <br><br>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>

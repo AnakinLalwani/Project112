@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h3 class="btn heading">My Tests
+      </h3>
+      <br><br>
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div id="camera" class="col-md-12 col-sm-12 col-xs-12">
+          <img id="tmtest" src="my.png">
+        </div>
+        <h3 class="col-md-4 col-sm-12 col-xs-12 obsconclusion">Teachable Machine:<br> The teachable machine can only recognise objects that have been trained into it and nothing else. My website can recognise balls, bottles, guitars, dogs and books. Objects that have been trained into it work 60% of the time. I used 3 objects and it didnt recognise 1 of them. This is because my Ai has only been trained with some specific objects</h3>
+        <br><br>
+      </div>
+      <div id="conclusion" class="col-md-12 col-sm-12 col-xs-12">
+        <h3 class="col-md-4 col-sm-12 col-xs-12 obsconclusion">MobileNet:<br> MobileNet can identify most of the times but in my testing I had to use 3 different items and it didn't recognise 2 of them correctly I had used a Nerf Gun and a Piano but it gave different answers each time. This is probabaly because all objects are different and the MobileNet has been trained with different images.</h3>
+        <div id="result">
+          <img id="mobilenet" src="ml5.png" onclick="mn()">
+        </div>
+        
+        <br><br>
+        <button class="btn btn-primary" id="tests" onclick="back()">Back</button>
+        <br><br>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
